@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/4972aba2c4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+
+            <img src="./Images/sidhu.jpg" class="song-img">
+            <h1>East Side Flow</h1>
+            <p>Sidhu Moosewala,The GOAT</p>
+
+
+            <audio id="ctrlSong">
+                <source src="./Media/East_Side_Flow_-_Sidhu_Moose_Wala_Slowed_Reverb_(128k).m4a" type="audio/mpeg">
+            </audio>
+
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                     <div><i class="fa-solid fa-backward" id="back"></i></div>
+                     <div onclick="playPouse()"> <i class="fa-solid fa-play" id="play"></i></div>
+                     <div><i class="fa-solid fa-forward" id="forw"></i></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
